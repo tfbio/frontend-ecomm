@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --strong-white: #FFF;
+  --faded-white: #f2f2f2;
+
+  --red: #ff1a1a;
+
+  --light-blue: #66a3ff;
+  --blue: #0052cc;
+
+  
+  --very-light-gray: #e1e1e6;
+  --light-gray: #d9d9d9;
+  --gray: #bfbfbf;
+  --strong-gray: #29292e;
+  --almost-black-gray: #121214;  
+  
+  --cyan: #61dafb;
+  --yellow: #eba417;
+}
+
+body {
+  background: var(--very-light-gray);
+  color: var(--almost-balck-gray);
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720) {
+  html {
+    font-size: 87.5%;
+  }
+}

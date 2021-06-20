@@ -1,0 +1,25 @@
+.searchContainer {
+  background: var(--light-blue);
+  margin-right: 5rem;
+  padding: 0.6rem 2rem;
+  border-radius: 3rem;
+
+  svg {
+    color: var(--strong-white);
+    height: 1.5rem;
+    width: 1.5rem;
+    vertical-align: -0.4rem;
+  }
+
+  input {
+    border: 0;
+    background: transparent;
+    outline: transparent;
+    color: var(--strong-white);
+    padding: 0.5rem 0.8rem;
+  }
+
+  ::placeholder {
+    color: var(--faded-white);
+  }   
+}

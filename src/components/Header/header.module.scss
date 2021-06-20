@@ -1,0 +1,58 @@
+.headerContainer {
+  height: 4.4rem;
+  background: var(--strong-white);
+  border-bottom: 1px solid var(--strong-gray);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 4.4rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+
+  .logo {
+    width: 16rem;
+    height: 4rem;
+  }
+}
+
+.headerManager {
+  display: flex;
+  align-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+
+    font-size: 1.2rem;
+    background: var(--light-blue);
+    color: var(--strong-white);
+
+    & + a {
+      margin-left: 1rem;
+    }
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 0.4rem;
+      vertical-align: -0.4rem;
+    }
+
+    transition: filter 0.2s;
+    &:hover {
+      filter: brightness(0.9)
+    }
+  }
+  
+}
