@@ -1,20 +1,27 @@
 import styles from './productCard.module.scss';
-import { FaSearchPlus } from 'react-icons/fa';
+import { AiOutlineHeart} from 'react-icons/ai';
 
 // vai precisar receber parâmetros
 export function ProductCard() {
   return (
     <li className={styles.productCard}>
-      <p className={styles.category}>Category</p>
-      <p className={styles.name}>Product Name</p>
-      <img className={styles.cardImg} src="/images/product-placeholder.png" alt="product image" />
-      <div>
-        <p className={styles.price}>$1191.90</p>
-        <p className={styles.descountPrice}>$990.90</p>        
+      <div className={styles.content}>
+        <p className={styles.name}>Product Name</p>
+        <img className={styles.cardImg} src="/images/product-placeholder.png" alt="product image" />
+       
+        <div className={styles.productInfo}>
+          <div className={styles.priceTab}>
+            <p className={styles.descountPrice}>$9.90</p>  
+            <p className={styles.price}>$11.90</p>
+          </div>
+          <button type="button">
+            <AiOutlineHeart />
+          </button>
+        </div> 
       </div>
-      <a href="">
-        <FaSearchPlus />
-      </a>
+      <div className={styles.viewMore}>
+        <a href="">View Product</a> 
+      </div>
     </li>
   )
 }

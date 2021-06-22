@@ -10,6 +10,7 @@
 
   p {
     color: var(--strong-white);
+    min-width: 5rem;
     margin-right: 3rem;
     transition: filter 0.2s;
     &:hover {
