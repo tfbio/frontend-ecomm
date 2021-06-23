@@ -1,16 +1,18 @@
 import styles from './icon.module.scss';
-import { AiOutlineShoppingCart, AiOutlineHeart, AiOutlineUserAdd } from 'react-icons/ai';
 import { useState } from 'react';
+import { AiOutlineShoppingCart, AiOutlineHeart, AiOutlineUserAdd } from 'react-icons/ai';
+import { useCart } from '../../../hooks/useCart';
 
 
 export function CartIcon() {
-  const [cartItems, setCartItems] = useState(0)
+  const { cart } = useCart()
+  const cartItems = cart.length
 
   return (
     cartItems > 0 ? 
     (
       <a className={styles.iconBody} href="">
-      <p>{cartItems}</p>
+      <p data-testid="cart-items">{cartItems}</p>
       <AiOutlineShoppingCart className={styles.icon} />
       </a>
     ) : 
