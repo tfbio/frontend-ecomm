@@ -27,33 +27,4 @@
 .headerManager {
   display: flex;
   align-items: center;
-
-  a {
-    display: flex;
-    align-items: center;
-    padding: 0 0.5rem;
-    padding: 1rem 1rem;
-    border-radius: 3rem;
-
-    font-size: 1.2rem;
-    background: var(--light-blue);
-    color: var(--strong-white);
-
-    & + a {
-      margin-left: 1rem;
-    }
-
-    svg {
-      width: 1.5rem;
-      height: 1.5rem;
-      margin-right: 0.4rem;
-      vertical-align: -0.4rem;
-    }
-
-    transition: filter 0.2s;
-    &:hover {
-      filter: brightness(0.9)
-    }
-  }
-  
 }
