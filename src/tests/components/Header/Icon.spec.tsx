@@ -28,9 +28,7 @@ describe('Icon Component', () => {
   it('should render the total amount of unique items in cart', () => {
     const { getByTestId } = render(<CartIcon />)
 
-    const itemsInCart = getByTestId('cart-items')
-    console.log(itemsInCart);
-    
+    const itemsInCart = getByTestId('cart-items')    
     expect(itemsInCart).toHaveTextContent('2')
   })
 })

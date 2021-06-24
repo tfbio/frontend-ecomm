@@ -9,8 +9,8 @@ export function Header() {
         <img className={styles.logo} src="/images/logo.png" alt="logo" />
         <div className={styles.headerManager}>
           <SearchBar />
-          <CartIcon />
-          <FavoritesIcon />
+          <CartIcon data-testid="cart-icon"/>
+          <FavoritesIcon data-testid="fav"/>
           <LoginIcon />
         </div>
       </div>
