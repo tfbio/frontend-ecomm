@@ -1,5 +1,5 @@
 import { createContext, ReactNode, useContext, useState } from 'react';
-import { Product } from '../types';
+import { Product } from '../../types';
 
 interface CartProviderProps {
   children: ReactNode;
@@ -10,6 +10,7 @@ interface CartContextData {
   addProductToCart: (product: Product) => Promise<void>;
   removeProduct: (productId: number) => void;
   updateProductAmount: ({ product, newAmount }: UpdateProductAmount) => void;
+  clearCart: () => void;
 }
 
 interface UpdateProductAmount {
@@ -64,11 +65,17 @@ export function CartProvider({ children }: CartProviderProps) {
     setCart(updatedCart)
   }
 
+  // Codigo Placeholder
+  const clearCart = () => {}
+
+  
+
+  const contextValues = {
+    cart, addProductToCart, removeProduct, updateProductAmount, clearCart
+  }
   
   return (
-    <CartContext.Provider
-      value={{ cart, addProductToCart, removeProduct, updateProductAmount }}
-    >
+    <CartContext.Provider value={contextValues} >
       {children}
     </CartContext.Provider>
   );
