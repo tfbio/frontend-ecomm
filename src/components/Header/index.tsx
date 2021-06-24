@@ -1,7 +1,6 @@
-import { AiOutlineUserAdd, AiOutlineShoppingCart } from 'react-icons/ai';
-import styles from './header.module.scss';
-import { SearchBar } from './SearchBar';
-import { CartIcon, FavoritesIcon, LoginIcon } from './Icons';
+import styles from './header.module.scss'
+import { SearchBar } from './SearchBar'
+import { CartIcon, FavoritesIcon, LoginIcon } from './Icons'
 
 export function Header() {
   return (
