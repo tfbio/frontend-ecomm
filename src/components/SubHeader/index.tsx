@@ -1,10 +1,15 @@
 import styles from './subheader.module.scss';
+import Link from 'next/link';
 
 export function SubHeader() {
   return (
     <div className={styles.subheaderContainer}>
-      <p>Category 1</p>
-      <p>Category 2</p>
+      <Link href="/categories/produtos">
+        <a>
+          Sports
+        </a>
+      </Link>
+      <p>Electronics</p>
       <p>Category 3</p>
       <p>Category 4</p>
       <p>Category 5</p>

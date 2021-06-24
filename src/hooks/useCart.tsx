@@ -1,5 +1,5 @@
 import { createContext, ReactNode, useContext, useState } from 'react';
-import { Product } from '../../types';
+import { Product } from '../types';
 
 interface CartProviderProps {
   children: ReactNode;
