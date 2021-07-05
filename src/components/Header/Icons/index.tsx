@@ -1,11 +1,11 @@
 import styles from './icon.module.scss';
 import { useState } from 'react';
 import { AiOutlineShoppingCart, AiOutlineHeart, AiOutlineUserAdd } from 'react-icons/ai';
-import { useCart } from '../../../hooks/useCart';
+import { useCart } from '../../../contexts/cartContext';
 
 
 export function CartIcon() {
-  const { cart } = useCart()
+  const { cart } = useCart()    
   const cartItems = cart.length
 
   return (

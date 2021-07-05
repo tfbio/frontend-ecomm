@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 79898484688679,
+      "name": "Produto Teste 1",
+      "category": "electronics",
+      "imageUrl": "/images/product-placeholder.png",
+      "unformattedPrice": 219.9
+    },
+    {
+      "id": 79898876848679,
+      "name": "Produto Teste 2",
+      "category": "electronics",
+      "imageUrl": "/images/product-placeholder.png",
+      "unformattedPrice": 158.9
+    },
+    {
+      "id": 794865184688679,
+      "name": "Produto Teste 2",
+      "category": "sports",
+      "imageUrl": "/images/product-placeholder.png",
+      "unformattedPrice": 758.9
+    }
+  ]
+}

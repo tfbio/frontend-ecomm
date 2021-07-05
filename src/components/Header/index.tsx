@@ -8,7 +8,9 @@ export function Header() {
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
         <Link href="/">
-          <img className={styles.logo} src="/images/logo.png" alt="logo" />
+          <a>
+            <img className={styles.logo} src="/images/logo.png" alt="logo" />
+          </a>
         </Link>
         <div className={styles.headerManager}>
           <SearchBar />
