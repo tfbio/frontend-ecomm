@@ -1,17 +1,18 @@
-import { GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next'
+import { Product } from '../types';
 import Head from 'next/head';
 import { ProductCard } from '../components/ProductCard';
 import { TrendingCategoryCard } from '../components/ProductCard/VariantCard';
 import styles from '../styles/home.module.scss';
+import { api } from '../services/api';
 
-interface HomeProps {
-  product: {
-    productId: string;
-    amount: number
-  }
+interface props {
+  info: Product;
 }
 
-export default function Home({ product }: HomeProps) {
+export default function Home({ info }: props) {
+  const product = {...info}
+
   return (
     <>
       <Head>
@@ -22,30 +23,30 @@ export default function Home({ product }: HomeProps) {
           <section className={styles.trending}>
             <TrendingCategoryCard />
             <ul className={styles.trendingList}>
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
+              <ProductCard product={product}/>
+              <ProductCard product={product}/>
+              <ProductCard product={product}/>
+              <ProductCard product={product}/>
             </ul>
           </section>
           <section className={styles.test}>
             <h1>Top Searches</h1>
             <ul className={styles.test}>
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
+              <ProductCard product={product}/>
+              <ProductCard product={product}/>
+              <ProductCard product={product}/>
+              <ProductCard product={product}/>
+              <ProductCard product={product}/>
             </ul>
           </section>
           <section className={styles.test}>
             <h1>On Discount</h1>
             <ul className={styles.test}>
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
+              <ProductCard product={product}/>
+              <ProductCard product={product}/>
+              <ProductCard product={product}/>
+              <ProductCard product={product}/>
+              <ProductCard product={product}/>
             </ul>
           </section>
         </div>
@@ -53,23 +54,14 @@ export default function Home({ product }: HomeProps) {
     </> 
   )
 }
-/*
-export const getStaticProps: GetStaticProps = async () => {
-  const price = await stripe.prices.retrieve('price_1J1AORD4Sw0yz5qZaaBUba7R')
 
-  const product = {
-    priceId: price.id,
-    amount: new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'CAD'
-    }).format(price.unit_amount/100),
-  }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const { data } = await api.get<Product>(`products/79898484688679`)
   
   return {
     props: {
-      product,
+      info: data
     },
-    revalidate: 60 * 60 * 24
   }
 }
-*/

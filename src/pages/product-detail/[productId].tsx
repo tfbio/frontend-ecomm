@@ -12,8 +12,6 @@ export const getServerSideProps: GetServerSideProps = async (context: GetServerS
   }
 }
 
-export default function ProductDetails(info: ProductInfo) {  
-  console.log(info);
-  
+export default function ProductDetails(info: ProductInfo) {    
   return <p>Página de um único produto</p> 
 }

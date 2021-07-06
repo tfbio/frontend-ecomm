@@ -4,32 +4,32 @@ import Link from 'next/link';
 export function SubHeader() {
   return (
     <div className={styles.subheaderContainer}>
-      <Link href="products/sports">
+      <Link href="http://localhost:3000/products/sports">
         <a>
           Sports
         </a>
       </Link>
-      <Link href="products/electronics">
+      <Link href="http://localhost:3000/products/electronics">
         <a>
           Electronics
         </a>
       </Link>
-      <Link href="products/accessories">
+      <Link href="http://localhost:3000/products/accessories">
         <a>
           Accessories
         </a>
       </Link>
-      <Link href="products/smartphones-tablets">
+      <Link href="http://localhost:3000/products/smartphones-tablets">
         <a>
           Smartphones &amp; Tablets
         </a>
       </Link>
-      <Link href="products/computers">
+      <Link href="http://localhost:3000/products/computers">
         <a>
           Computers
         </a>
       </Link>
-      <Link href="products/instruments">
+      <Link href="http://localhost:3000/products/instruments">
         <a>
           Musical Instruments
         </a>

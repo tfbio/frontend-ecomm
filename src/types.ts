@@ -4,6 +4,8 @@ export interface ProductInfo {
   category: string;
   imageUrl: string;
   unformattedPrice: number;
+  discountPrice?: string;
+  description?: string;
 }
 
 export interface Product {
@@ -12,6 +14,8 @@ export interface Product {
   category: string;
   imageUrl: string;
   formattedPrice: string;
+  discountPrice?: string;
+  description?: string;
 }
 
 export interface ProductInCart {
@@ -21,6 +25,8 @@ export interface ProductInCart {
   imageUrl: string;
   amount: number;
   formattedPrice: string;
+  discountPrice?: string;
+  description?: string;
 }
 
 

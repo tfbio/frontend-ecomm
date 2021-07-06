@@ -1,18 +1,22 @@
 import styles from './productCard.module.scss';
 import { AiOutlineHeart} from 'react-icons/ai';
+import { Product } from '../../types';
 
-// vai precisar receber parâmetros
-export function ProductCard() {
+interface props {
+  product: Product;
+}
+
+export function ProductCard({ product }: props) {
+
   return (
     <li className={styles.productCard}>
       <div className={styles.content}>
-        <p className={styles.name}>Product Name</p>
-        <img className={styles.cardImg} src="/images/product-placeholder.png" alt="product image" />
-       
+        <p className={styles.name}>{product.name}</p>
+        <img className={styles.cardImg} src={product.imageUrl} alt="product image" />
         <div className={styles.productInfo}>
           <div className={styles.priceTab}>
-            <p className={styles.descountPrice}>$9.90</p>  
-            <p className={styles.price}>$11.90</p>
+            <p className={styles.discountPrice}>{product.discountPrice}</p>  
+            <p className={styles.price}>{product.formattedPrice}</p>
           </div>
           <button type="button">
             <AiOutlineHeart />
@@ -20,7 +24,7 @@ export function ProductCard() {
         </div> 
       </div>
       <div className={styles.viewMore}>
-        <a href="">View Product</a> 
+        <a href={`http://localhost:3000/product-detail/${product.id}`}>View Product</a> 
       </div>
     </li>
   )

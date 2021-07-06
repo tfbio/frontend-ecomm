@@ -5,21 +5,27 @@
       "name": "Produto Teste 1",
       "category": "electronics",
       "imageUrl": "/images/product-placeholder.png",
-      "unformattedPrice": 219.9
+      "formattedPrice": "219.90",
+      "discountPrice": "189.90",
+      "description": "none"
     },
     {
       "id": 79898876848679,
       "name": "Produto Teste 2",
       "category": "electronics",
       "imageUrl": "/images/product-placeholder.png",
-      "unformattedPrice": 158.9
+      "formattedPrice": "119.90",
+      "discountPrice": "90.90",
+      "description": "none"
     },
     {
       "id": 794865184688679,
       "name": "Produto Teste 2",
       "category": "sports",
       "imageUrl": "/images/product-placeholder.png",
-      "unformattedPrice": 758.9
+      "formattedPrice": "359.90",
+      "discountPrice": "309.90",
+      "description": "none"
     }
   ]
 }

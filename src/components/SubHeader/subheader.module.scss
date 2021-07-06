@@ -6,11 +6,10 @@
   background: var(--strong-gray);
 
   padding: 0 5rem;
-  height: 2rem;
+  height: 2.4rem;
 
   a, p {
     color: var(--strong-white);
-    min-width: 5rem;
     margin-right: 1.5rem;
     transition: filter 0.2s;
     &:hover {
