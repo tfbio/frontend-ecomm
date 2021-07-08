@@ -1,8 +1,8 @@
 import { GetServerSideProps } from 'next'
 import { Product } from '../types';
 import Head from 'next/head';
-import { ProductCard } from '../components/ProductCard';
-import { TrendingCategoryCard } from '../components/ProductCard/VariantCard';
+import { ProductCard } from '../components/Cards/ProductCard';
+import { TrendingCategoryCard } from '../components/Cards/CategoryCard';
 import styles from '../styles/home.module.scss';
 import { api } from '../services/api';
 

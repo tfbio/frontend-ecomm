@@ -5,24 +5,37 @@
       "name": "Produto Teste 1",
       "category": "electronics",
       "imageUrl": "/images/product-placeholder.png",
+      "hasDiscount": true,
       "formattedPrice": "219.90",
       "discountPrice": "189.90",
       "description": "none"
     },
     {
-      "id": 79898876848679,
+      "id": 798984846886379,
       "name": "Produto Teste 2",
       "category": "electronics",
       "imageUrl": "/images/product-placeholder.png",
+      "hasDiscount": false,
+      "formattedPrice": "229.90",
+      "discountPrice": "229.90",
+      "description": "none"
+    },
+    {
+      "id": 798988768486379,
+      "name": "Produto Teste 3",
+      "category": "electronics",
+      "imageUrl": "/images/product-placeholder.png",
+      "hasDiscount": true,
       "formattedPrice": "119.90",
       "discountPrice": "90.90",
       "description": "none"
     },
     {
-      "id": 794865184688679,
-      "name": "Produto Teste 2",
+      "id": 7948651846883679,
+      "name": "Produto Teste 4",
       "category": "sports",
       "imageUrl": "/images/product-placeholder.png",
+      "hasDiscount": true,
       "formattedPrice": "359.90",
       "discountPrice": "309.90",
       "description": "none"

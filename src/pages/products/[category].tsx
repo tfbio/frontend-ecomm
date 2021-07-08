@@ -3,6 +3,7 @@ import { GetServerSideProps, GetServerSidePropsContext} from 'next'
 import { api } from '../../services/api';
 import { ProductInfo } from '../../types';
 import Head from 'next/head';
+import styles from '../../styles/pages.module.scss';
 
 
 export const getServerSideProps: GetServerSideProps = async (context: GetServerSidePropsContext) => {
@@ -25,7 +26,13 @@ export default function Products(list: ProductInfo[]) {
       <Head>
         <title>Shopping | E-Comm</title>
       </Head>
-      <p>{`Pagina com listagem de produtos da categoria ${category}`}</p>
+      <main className={styles.pageContainer}>
+        <div className={styles.pageContent}>
+          <p>Detalhes de um produto -----------------------------------------------------------------------------------------------------------------
+            ------------------------------------------------------------------------------------------------------------------------------------------
+          </p>
+        </div>
+      </main>
     </>
   ) 
 }
